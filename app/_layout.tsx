@@ -30,7 +30,15 @@ export default function RootLayout() {
       <Stack>
         {/* Start app at the login screen */}
         <Stack.Screen name="index" options={{ headerShown: false }} />
-        <Stack.Screen name="login" options={{ headerShown: false }} />
+        <Stack.Screen
+          name="login"
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: '#fff' },
+            headerTintColor: '#000',
+            headerBackButtonDisplayMode: 'minimal',
+          }}
+        />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
